@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main-container{
+    background: linear-gradient(to right,rgb(250, 248, 248),rgb(253, 251, 251),whhit);
+}
+
+#img{
+    background:linear-gradient(to right,rgba(255, 255, 255, 0.486), rgba(167, 158, 158, 0.24)),url(images/istockphoto-1303501167-612x612.jpg);
+    background:linear-gradient(to top,rgba(255, 255, 255, 0.486), rgba(255, 255, 255, 0.24)),url(images/istockphoto-1303501167-612x612.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+#info{
+    padding: 70px;
+}
+#text{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#text2{
+    font-size: 20px;
+    font-weight: 700;
+}
+#menu-ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#menu-ul, li{
+    margin: 0 10px;
+}
+#menu-ul, a{
+    color: black;
+}
+a:link{
+    text-decoration: none;   
+}
+
+#btn{
+    display: flex;
+}
+
+#btn, button{
+    margin: 0 px;
+}
+
