@@ -55,7 +55,7 @@
     </style>
 </head>
 <body style="padding:0; margin:0;">  
-<!-- Adding a comment to check if a commit I will do on CMD will work -->  
+<!-- Adding a comment to check if a commit I will do on CMD will work --> 
     <section class="bg-img">
 
     <header  class="navbar navbar-expand-sm bg-transparent navbar-dark">
