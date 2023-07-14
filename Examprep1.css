@@ -1,0 +1,91 @@
+.header{
+    width: 100%;
+    height: 3em;
+    background-color: rgb(153, 153, 238);
+    color: aliceblue;
+    padding: 1px;
+}
+
+h1{
+ text-align: center;
+    transform: translateY(-30%);
+}
+
+
+.flex{
+    display: flex;
+}
+
+.dash{
+    border: 1px solid black;
+    width: 1,5em;
+    height: 2px;
+    margin: 1px;
+}
+
+/*Dropdown button*/
+
+/*.button{
+background-color: #04AA6D;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+
+}*/
+
+/*The container needed to position the dropdown content*/
+
+.button{
+    margin: 10px;
+    height: 1cm;
+    width: 1cm;
+    
+}
+
+.dropdown{
+    transform: translateX(1800%);
+    position: relative;
+    display: inline-block;
+    
+}
+
+/*Dropdown content (Hidden by Default)*/
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateX(-90%);
+
+}
+
+/*Links inside the dropdown*/
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Changes the color of the dropdown menu on hover*/
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+/*Show the dropdown menu on hover*/
+
+.dropdown:hover .dropdown-content{
+    display: block; /*YOu can change it to flex or anything*/
+}
+
+/*Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover.dash{
+    background-color: #3e8e41;
+}
