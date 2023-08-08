@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(228, 228, 217);
+}
+
+#cardo{
+    height: 30%;
+    width: 60%;
+}
+
+#cardo-container{
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: fit-content;
+    margin-left: 1px;
+}
+
+#u-list{  
+    justify-content:start;
+    margin-left: 50px;
+    width: 70%;
+    
+}
+
+#u-list a{
+    color: white;
+}
+
+#u-list a:active{
+    color: aqua;
+}
+
+#u-list li:hover{
+    letter-spacing: 2px;
+    transition: 2s ease;
+}
+
+#svg-menu{
+    display: none;
+}
+
+#buttons{
+    padding:15px 0 ;
+    width: 20%;
+    margin:0 5px;
+}
+
+#btn-div{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+@media (max-width: 577px){
+
+    #svg-menu{
+        display: block;
+    }   
+    
+    #logo{
+        width: fit-content;
+        margin-left: 1px;
+    }
+
+    #channels-menu{
+        display: none;
+    }
+
+    #u-list{
+        display: none;
+
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    #cardo-container{
+       width: 100vw;
+    }
+
+}
+
+/*----pop up-----*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Scan&display=swap');
+
+:root{
+    --primary-clr:#6c00f9;
+    --white: #fff;
+    --tabs-list-bg-clr:#dfc8fd;
+    --btn-hvr:#4e03b0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'open sans',sans-serif;
+}
+body{
+    font-size: 12px;
+    background-color: rgb(228, 228, 217);
+    color: var(--text-clr);
+}
+.flex_align_justify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    min-height: 100vh;
+    padding:0 20px;
+}
+.tc_wrap{
+    width: 700px;
+    max-width: 100%;
+    height: 450px;
+    background: var(--white);
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.tc_wrap .tab_list{
+    width: 200px;
+    background: var(--tabs-list-bg-clr);
+    height: 100%;
+}
+.tabs_wrap .tabs_content{
+    width: calc(100% -200px);
+    padding: 0 10px 0 20px;
+    height: 100%;
+}
+.tc_wrap .tabs_content .tabs_head,
+.tc_wrap .tabs_content .tab_foot{
+    color: var(--primary-clr);
+    padding: 25px 0;
+    height: 70px;
+}
+.tc_wrap .tabs_content .tabs_head {
+    text-align: center;
+}
+.tc_wrap .tabs_content .tabs_body{
+    height: calc(100% - 140px);
+    overflow: auto;
+}
+
+.tc_wrap .tab_list ul{
+    padding: 70px 20px;
+    text-align:right;
+}
+.tc_wrap .tab_list ul li{
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tab_list ul li:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-clr);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tab_list ul li.active,
+.tc_wrap .tab_list ul li:hover{
+    color: var(--primary-clr);
+}
+.tc_wrap .tab_list ul li.active:hover:before{
+    opacity: 1;
+}
+.tc_wrap .tabs_content .tabs_body .tab_item h3{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-clr);
+}
+.tc_wrap .tabs_content .tabs_body .tab_item p{
+    margin-bottom: 20px;
+}
+.tc_wrap .tabs_content .tabs_body .tab_item.active{
+    display: block !important;
+}
+.tc_wrap .tabs_content .tab_foot button{
+    width: 125px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.tc_wrap .tabs_content .tab_foot button.Decline{
+    margin-right: 15px;
+    border-color: var(--tabs-list-bg-clr);
+    color: var(--tabs-list-bg-clr);
+}
+.tc_wrap .tabs_content .tab_foot button.Agree{
+    color: var(--white);
+    background: var(--primary-clr);
+    border-color: var(--primary-clr);
+
+}
+.tc_wrap .tabs_content .tab_foot button.Decline:hover{
+    background: var(--tabs-list-bg-clr);
+    color: var(--white);
+}
+.tc_wrap .tabs_content .tab_foot button.Agree:hover{
+    background: var(--btn-hvr);
+    border-color: var(--btn-hvr);
+    
+}
+
+
+
+
+

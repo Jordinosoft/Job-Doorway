@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techritoma</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Techritoma.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+
+  
+
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-dark main-nav">
+
+ 
+  <div class="container-fluid">
+
+  <div class="container-fluid col-md-2 col-sm-2" id="logo">
+    <img src="images/Techritoma.jpg" alt="Techritoma" width="100px">
+  </div>
+
+  
+    <!-- Links -->
+    <div class="col-md-8">
+    <ul class="navbar-nav  menu-list" id="u-list">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#who-we-are">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Policy</a>
+      </li>
+    </ul>
+  </div>
+   
+
+   
+      <div class="dropdown dropstart text-end" col-md-2" id="svg-menu">
+        <button type="button" class="btn" data-bs-toggle="dropdown" style="background-color: gray; color: white;">
+          &#9776
+        </button>
+      
+        <ul class="dropdown-menu">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#who-we-are">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Privacy Policy</a>
+          </li>
+        </ul>
+    </div>
+
+
+  </div>
+  
+
+    <div class="container-fluid col-md-2 col-sm-4" id="channels-menu">
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+          Channels
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Web Design</a></li>
+          <li><a class="dropdown-item" href="#">App Developement</a></li>
+          <li><a class="dropdown-item" href="#">Robotics</a></li>
+          <li><a class="dropdown-item" href="#">AI</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</nav>
+
+<section class="container-fluid" id="sec1">
+  <!--start of bg-img div --> 
+  <div id="trans-pic">
+
+<!--Start of transparent div-->
+   <div class="container-fluid pt-lg-5" id="trans">
+      <div class="col-md-6 m-auto pt-5" id="info">
+         <h1 class="text-center">Empowering you to see a possible future</h1>
+         <p class="text-center">Learning Today...Leading Tommorow</p>
+         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ab voluptates velit consequuntur dolorem facere fugit aliquam placeat accusantium enim.</p>
+    </div>
+
+    <div id="btn-div" class="container-fluid">
+      <a href="Techritoma-log.php" id="buttons" class="btn btn-outline-danger">Login</a>
+          <!-- Button to trigger the popup -->
+      <a href="#" id="buttons" class="btn btn-outline-success" onclick="showPopup()">Register</a>
+ 
+    <!-- Bootstrap modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Include your existing popup design here -->
+                    <div class="wrapper flex_align_justify" id="my-popup">
+                        <div class="tc_wrap">
+                            <div class="tab_list">
+                                <ul>
+                                    <li data-tc="tab_item_1" class="active">Terms of use</li>
+                                    <li data-tc="tab_item_2">intellectual property rights</li>
+                                    <li data-tc="tab_item_3">Prohibited activities</li>
+                                    <li data-tc="tab_item_4">Termination Clause</li>
+                                    <li data-tc="tab_item_5">Governing Law</li>
+                                </ul>
+                            </div>
+                            <div class="tabs_content">
+                                <div class="tabs_head">
+                                    <h2>Terms & Conditions</h2>
+                                </div>
+                                <div class="tabs_body">
+                                    <div class="tab_item tab_item_1">
+                                        <h3>Terms of use</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                    </div>
+                                    <div class="tab_item tab_item_2" style="display: none;">
+                                        <h3>intellectual property rights</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                    </div>
+                                    <div class="tab_item tab_item_3" style="display: none;">
+                                        <h3>Prohibited activities</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                    </div>
+                                    <div class="tab_item tab_item_4" style="display: none;">
+                                        <h3>Termination Clause</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                    </div>
+                                    <div class="tab_item tab_item_5" style="display: none;">
+                                        <h3>Governing Law</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, corrupti sunt? Hic est, veniam harum at numquam, voluptatibus totam amet vel voluptatum enim pariatur culpa, eos inventore libero quasi nemo.</p>
+                                    </div>
+                                </div>
+                                <div class="tab_foot flex_align_justify" id="button">
+                                    <button class="Decline" onclick="closePopup()">Decline</button>
+                                    <button class="Agree"  onclick="openRegisterPage()">Agree</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+     
+   </div>
+   <!--End of transparent div-->
+
+  </div>
+  <!--End of bg-img div --> 
+</section>
+
+<section class="container-fluid w-100" id="About">
+ <div class="text-center">
+  <h1 style="padding-bottom: 40px;">ABOUT TECHRITOMA MENTORSHIP</h1>
+  <div class="container-fluid mt-5">
+    <div class="row justify-content-evenly">
+      <div class="col-md-3">
+        <h3 class="text-center">Our History</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque voluptatem harum tempore voluptate, atque libero saepe perspiciatis hic distinctio accusantium nisi reprehenderit sed, totam id ad, in architecto laborum? Magni, officia odio? Repellat cum perspiciatis aliquid tempore dicta delectus accusantium explicabo quas cupiditate corrupti voluptates fugiat, soluta earum recusandae!</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="text-center">Our Goals</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque voluptatem harum tempore voluptate, atque libero saepe perspiciatis hic distinctio accusantium nisi reprehenderit sed, totam id ad, in architecto laborum? Magni, officia odio? Repellat cum perspiciatis aliquid tempore dicta delectus accusantium explicabo quas cupiditate corrupti voluptates fugiat, soluta earum recusandae!</p>
+      </div>
+      <div class="col-md-3">
+        <h3 class="text-center">Quote</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cumque voluptatem harum tempore voluptate, atque libero saepe perspiciatis hic distinctio accusantium nisi reprehenderit sed, totam id ad, in architecto laborum? Magni, officia odio? Repellat cum perspiciatis aliquid tempore dicta delectus accusantium explicabo quas cupiditate corrupti voluptates fugiat, soluta earum recusandae!</p>
+      </div>
+    </div>
+  </div>
+ </div>
+  
+</section>
+
+<section class="container-fluid" id="Reviews">
+  <div class="row justify-content-evenly">
+    <h1 class="text-center">STUDENT REVIEWS</h1>
+    <div class="card col-md-3">
+      <img src="images/www.istockphoto.com/user2.jpg" alt="">
+
+      <div class="card-body">
+        <h3 class="text-center">Mac Bright</h3>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quisquam, cupiditate sunt quas beatae blanditiis.</p>
+      </div>
+      </div>
+
+      <div class="card col-md-3">
+        <img src="images/www.istockphoto.com/user3.jpg" alt="">
+  
+        <div class="card-body">
+          
+          <h3 class="text-center">Ayuk Paul</h3>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quisquam, cupiditate sunt quas beatae blanditiis.</p>
+            
+        </div>
+        </div>
+
+        <div class="card col-md-3">
+          <img src="images/www.istockphoto.com/user1.jpg" alt="">
+    
+          <div class="card-body">
+            <h3 class="text-center">Boss Unity</h3>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quisquam, cupiditate sunt quas beatae blanditiis.</p>
+          </div>
+          </div>
+  </div>
+</section>
+ 
+
+<section class="text-center" id="who-we-are">
+  <h1>WHO WE ARE</h1>
+  
+  <div id="carousel" class="carousel slide mx-auto" data-bs-ride="true" style="width: 70%;">
+
+
+    <div class="carousel_indicaors">
+        
+
+        <button type="button" data-bs-target="#carousel" bata-bs-slide-to="0" class="active" aria-current="true" araia-label="slide 1"></button>
+        <button type="button" data-bs-target="#carousel" bata-bs-slide-to="1" araia-label="slide 2"></button>
+        <button type="button" data-bs-target="#carousel" bata-bs-slide-to="2" araia-label="slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+
+       <div class="carousel-item active">
+
+        
+        <div class="card">
+            <img src="images/portrait-young-handsome-smiling-businessman-holding-laptop-hands-typing-browsing-web-pages-isolated-white-background_1150-63247.jpg" alt="">
+    
+            <div class="card-body">
+
+                <p class="card-text text-center">
+                    Eng. Elame(CEO and Fullstack developer)
+                </p>
+                <div class="d-flex justify-content-center align-content-center">
+                  <button class="btn btn-primary">See Profile</button>
+                </div>
+            </div>
+            </div>
+
+       </div>
+
+       <div class="carousel-item">
+
+          
+        <div class="card">
+            <img src="images/cheerful-young-man-wearing-cap-make-thumbs-up-gesture_171337-17906.jpg" alt="">
+    
+            <div class="card-body">
+
+                <p class="card-text text-center">
+                    Eng. Paul(Front-end developer)
+                </p>
+                <div class="d-flex justify-content-center align-content-center">
+                  <button class="btn btn-primary">See Profile</button>
+                </div>
+            </div>
+            </div>
+
+       </div>
+
+       <div class="carousel-item">
+
+
+        <div class="card">
+            <img src="images/istockphoto-1303501167-612x612.jpg" alt="">
+    
+            <div class="card-body">
+
+                <p class="card-text text-center">
+                    Eng. Gifty(Back-end developer)
+                </p>
+                <div class="d-flex justify-content-center align-content-center">
+                  <button class="btn btn-primary">See Profile</button>
+                </div>
+            </div>
+            </div>
+
+       </div>
+
+    </div>
+
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+</div>
+  
+</section>
+
+
+<footer class="container-fluid" style="background-color: rgba(31, 30, 30, 0.753); color:white; padding-top: 30px;">
+     
+  <div class="row justify-content-evenly">
+
+     <div class="col-md-4">
+        <h3 >About Techritoma Mentorship</h3>
+        <p style="color: grey;">Techritoma Mentorship is the best place to close the struggle</p>
+     </div>
+
+     <div  class="col-md-4">
+        <h3>Quick info</h3>
+        <div class="row">
+        <ul class="col-md-4" style="list-style: none;">
+           <li><a href="#" style="text-decoration: none; color: grey;">Home</a></li>
+           <li><a href="#" style="text-decoration: none; color: gray;">Employers</a></li>
+            <li><a href="#" style="text-decoration: none; color: grey;">Go to top</a></li>
+         </ul>
+
+         <ul class="col-md-4" style="list-style: none;">
+            <li><a href="#" style="color: grey;">Channel List</a></li>
+            <li><a href="#" style="color: grey;">Contact Us</a></li>
+         </ul>
+         </div>
+     </div>
+      
+     <div  class="col-md-4">
+     <h3>Techritoma Mentorship Contact</h3>
+    <p style="color: grey;">Address: Molyko -Buea</p>
+    <p><a href="#" style="text-decoration: none; color: grey;">Email:techritoma@gmail.com</a></p>
+    <p style="color: grey;">Phone: +237679495102</p>
+                
+     </div>
+  </div>
+  
+  <div class="row" id="footer-btm"style="background-color:rgb(31, 30, 30); margin-top: 20px;">
+    <p class="col-md-4" style="color: gray;">&copyCopyright 2023 TECHCOSOLVED 6</p>
+    <p class="col-md-6" style="color: gray;">Developed by TECHRITOMA Inc</p>
+    <p  class="col-md-2" style="color: gray;"><i class="fa-brands fa-twitter" style="margin: 0 3px;"></i> <i class="fa-brands fa-facebook" style="margin: 0 3px;"></i> <i class="fa-brands fa-instagram" style="margin: 0 3px;"></i></p>
+  </div> 
+
+
+   </footer>
+     
+
+<script src="all.min.js"></script>  
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function showPopup() {
+        $('#myModal').modal('show');
+    }
+</script>
+<script>
+    function openRegisterPage() {
+      window.location.href = "level-select.php";
+    }
+  </script>
+  
+  <script>
+    function closePopup() {
+      $('#myModal').modal('hide');
+    }
+  </script>
+</body>
+</html>
