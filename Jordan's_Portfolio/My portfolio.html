@@ -10,96 +10,95 @@
     <link rel="stylesheet" href="My portfolio.css">
     <link rel="stylesheet" href="all.min.css">
 </head>
-<body>
-   <header class="container-fluid bg-dark text-white navbar navbar-expand-sm pc-menu" id="header" style="justify-content: space-between;">
+<body id="body_btn">
+   <header class="container-fluid  text-dark navbar navbar-expand-sm pc-menu header" id="header" style="justify-content: space-between;">
 
       <div class="logo">
-         <h1>J<span>o</span>r<span>d</span>i<span>n</span>o<span>s</span>o<span>f</span>t</h1>
+        <h1>E<span>l</span>a<span>m</span>e <span>J</span>o<span>r</span>d<span>a</span>n</h1>
       </div>
 
       <div class="Menu">
         <ul class="Menu-ul d-flex">
-            <li><a href="#Home-section">Home</a></li>
-            <li><a href="#About-section">About</a></li>
-            <li><a href="#Skills-section">Skills</a></li>
-            <li><a href="#Services-section">Services</a></li>
+            <li><a class="pc" href="#Home-section" id="nav1">Home</a></li>
+            <li><a class="pc" href="#About-section-pc" id="nav2">About</a></li>
+            <li><a class="" href="#Skills-section-pc" id="nav3">Skills</a></li>
+            <li><a class="" href="#Services-section-pc" id="nav4">Services</a></li>
+            <li><a class="" href="#Projects-section-pc" id="nav5">Projects</a></li>
         </ul>
       </div>
 
       <div class="contact-btn">
-        <a href="contact-Jordan.html" class="btn btn-outline-primary">Let's Talk</a>
+        <a href="contact-Jordan.php" class="btn btn-outline-primary">Let's Talk</a>
       </div>
 
    </header>
-
-   <header class="container-fluid phone-menu bg-dark text-white navbar navbar-expand-sm" id="header"  style="justify-content: space-between;">
+<div id="header2" class="w-100">
+   <header class="container-fluid phone-menu   navbar navbar-expand-sm" id="head"  style="justify-content: space-between;">
 
       <div class="logo">
-         <h1>J<span>o</span>r<span>d</span>i<span>n</span>o<span>s</span>o<span>f</span>t</h1>
+         <h1>E<span>l</span>a<span>m</span>e <span>J</span>o<span>r</span>d<span>a</span>n</h1>
       </div>
 
       
-      <div class="dropdown dropstart text-end" col-md-2" id="svg-menu">
-         <button type="button" class="btn" data-bs-toggle="dropdown" style="background-color: gray; color: white;">
-           &#9776
-         </button>
-       
-         <ul class="dropdown-menu">
-           <li class="nav-item">
-             <a class="nav-link text-dark" href="#Home-section">Home</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link text-dark" href="#About-section">About</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link text-dark" href="#Skills-section">Skills</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link text-dark" href="#Services-section">Services</a>
-           </li>
-           <li class="nav-item">
-            <a class="nav-link text-dark" href="contact-Jordan.html">Contact Me</a>
-          </li>
-         </ul>
-     </div>
- 
-
-   </header>
-
-   
-
-   <section class="container-fluid Home-section" id="Home-section" style="height: 100vh; flex-wrap: wrap;">
-     
+        <div col-md-2" id="svg-menu">
+         <button type="button" class="btn " style="border: none; box-shadow: none;">
+           <span id="open" type="button" class="btn text-dark" style="font-size: xx-large;">&#9776</span> <span id="close" type="button" class="btn text-dark" style="font-size: xx-large; display: none;">&times</span>
+         </button>   
+        </div>
+        
+     </header>
+     <ul class="text-white bg-light phone-ul d-lg-none " id="phone-ul">
+      <li class="nav-item">
+        <a class="nav-link btn navigation" id="navigation1" href="#Home-section">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn navigation" id="navigation2"  href="#About-section-pc">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  btn navigation" id="navigation3" href="#Skills-section-pc">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  btn navigation" id="navigation4"  href="#Services-section-pc">Services</a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link  btn navigation" id="navigation5"   href="#Projects-section-pc">Projects</a>
+     </li>
+      <li class="nav-item">
+       <a class="nav-link  btn navigation" id="navigation6"  href="contact-Jordan.php">Contact Me</a>
+     </li>
+    </ul>
+  </div> 
+   <section class="container-fluid Home-section" id="Home-section" style="flex-wrap: wrap;">
+    
     <div class="row my-info" style="margin: auto;">
-
         <div class="my-info-text col-sm-5">
          <div style="width: fit-content; ">
            <h1>Hello!</h1>
            <h2>I am Elame .N Jordan</h2>
-           <p>A passionate fullstack developer, looking forward to making your business reach people just by them using a search bar <i class="fa fa-smile fa-2x text-warning" aria-hidden="true"></i></p>
+           <p>A passionate fullstack junior developer, looking forward to promote your business through a web search bar <i class="fa fa-smile fa-2x text-warning" aria-hidden="true"></i></p>
         </div>
-   </div>
+      </div>
         <div class="my-img col-sm-6 p-0" style="padding: 0;">
            <img src="assets/portfolio02.png" alt="" srcset="" width="100%">
         </div>
 
     </div>
-
    </section>
-   <div id="About-section" style="height: 13vh;"></div>
+  
+   <div style="height: 13vh;" id="About-section-pc" ></div>
  
-   <section class="container-fluid text-center d-flx  About-section" >
+   <section class="container-fluid text-center About-section" id="About-section" >
 
-      <h1>A<span>B</span>O<span>U</span>T M<span>E</span> <a href="#Home-section"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
+      <h1>A<span>B</span>O<span>U</span>T M<span>E</span> <a href="#header2"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
 
-    <div class="row About-row d-flex"">
+    <div class="row About-row d-flex ">
 
       <div class="Education col-sm-4">
 
          <h2>Education <i class="fa fa-book" aria-hidden="true"></i></h2>
-         <p>I did one year of nursery education at Government nursery school buea town, and I started primary one at PIPS. I attended 3 primary schools, PIPS ans Potters house in Buea, and Catholic School Gardens in Limbe. I graduated from Catholic School Gardens Limbe at primary six with a First School Leaving and Religeous studies Cirtifiicate, after learning for 6years from primary one. I got enrolled into
-         Kemonde Veteran High School(KVHS) Limbe, where I studied for 5years and Got my General Cirtificate of Education for ordinary level(GCE O-level). I continued my High school Education In KVHS and got my General Cirtificate of Education for dvance Level(GCE A-level). After my Advance Level Education, I wrote an Entrance Examination Into the College Of Technology(COT) under University Buea and I passed.
-         I am currently studying software Engineering in COT where I will graduate after 3 years with a Bachelors Degree in Technology.
+         <p>I did one year of nursery education at Government nursery school buea town, and I started primary one at PIPS. I attended 3 primary schools, PIPS and Potters house in Buea, and Catholic School Gardens in Limbe. I graduated from Catholic School Gardens Limbe in primary six with a First School Leaving and Religeous studies Cirtifiicate, after learning for 6years from primary one. I got enrolled into
+         Kemonde Veteran High School(KVHS) Limbe, where I studied for 5years and Got my General Cirtificate of Education for ordinary level(GCE O-level). I continued my High school Education In KVHS and got my General Cirtificate of Education for advance Level(GCE A-level). After my Advance Level Education, I wrote an Entrance Examination Into the College Of Technology(COT) under University Buea and I passed.
+         I am currently studying software Engineering in COT where I will graduate after 3 years with a Bachelor Degree in Technology.
          </p>
 
       </div>
@@ -107,17 +106,17 @@
       <div class="Achievements col-sm-4">
          <h2>Achievements <i class="fa fa-trophy" aria-hidden="true"></i></h2>
 
-   <div class="d-flex flex-column justify-content-evenly" style="height: 80%;">
+      <div class="d-flex flex-column justify-content-evenly" style="height: 80%;">
          <div>
           <p>General Cirtificate Of Education ordinary level(GCE O-level)</p>
           <a href="#" class="btn btn-warning">Download</a>
-    </div>
+       </div>
 
         <div>
           <p>General Cirtificate Of Education Advance level(GCE A-level)</p>
           <a href="Advance Level Slip.pdf" class="btn btn-warning">Download</a>
         </div>  
-    </div>
+      </div>
    </div>
 
       <div class="Passions col-sm-4">
@@ -128,6 +127,7 @@
          <p>Singing <i class="fa fa-signing" aria-hidden="true"></i></p>  
          <p>Eating <i class="fas fa-laugh-wink"></i></p>      
          <p>Walking <i class="fas fa-walking    "></i></p>
+         <p>Cleaning <i class="fas fa-broom-ball"></i></p>
          
          
       </div>
@@ -138,59 +138,100 @@
 
    <!--npm install -g npm@9.8.1 for future sanity project in the directory-->
 
-   <div id="Skills-section" style="height: 13vh;"></div>
+   <div id="Skills-section-pc" style="height: 13vh;"></div>
 
-   <section class="container-fluid text-center Skills-section" style="flex-wrap: wrap;">
+   <section class="container-fluid text-center Skills-section" id="Skills-section" >
 
-      <h1><span>U</span>s<span>e</span>d <span>L</span>an<span>gua</span>ges <a href="#Home-section"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
+      <h1><span>U</span>s<span>e</span>d <span>L</span>an<span>gua</span>ges <a href="#header2"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
 
       <div class="row skill-row d-flex" style="justify-content: space-evenly;">
 
-         <div class="col-sm-5 Languages">
+         <div class="col-md-5 Languages">
 
-            <h3>Languages</h3>
 
-             <div class="row  Languages-row d-flex" style="justify-content: space-evenly;" style="flex-wrap: wrap;">
+             <div class="row Languages-row w-100 " style="justify-content: space-evenly; flex-wrap: wrap;">
 
-               <div class="card col-sm-4" style="width:150px">
-                  <img class="card-img-top" src="assets/html.png" alt="Html Image" style="width:100%">
+               <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/html.png" alt="HTML logo" style="width:100%">
                   <div class="card-body">
                     <p class="card-text">HTML5</p>
                   </div>
                 </div>
 
-                <div class="card col-sm-4" style="width:150px; border: none;">
-                  <img class="card-img-top" src="assets/css.png" alt="Html Image" style="width:100%;">
+                <div class="card col-md-4" style="width:150px; border: none;">
+                  <img class="card-img-top" src="assets/css.png" alt="CSS logo" style="width:100%;">
                   <div class="card-body">
-                    <p class="card-text">CSS5</p>
+                    <p class="card-text">CSS3</p>
                   </div>
                 </div>
 
-                <div class="card col-sm-4" style="width:150px">
-                  <img class="card-img-top" src="assets/javascript.png" alt="Html Image" style="width:100%">
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/bootstrap.png" alt="Bootstrap5 logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">BOOTSTRAP5</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/tailwind-css.png" alt="Node.js logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">TAILWIND CSS</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/sass.png" alt="sass logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">SASS</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/javascript.png" alt="Javascrpit logo" style="width:100%">
                   <div class="card-body">
                     <p class="card-text">J-SCRIPT</p>
                   </div>
                 </div>
 
-                <div class="card col-sm-4" style="width:150px">
-                  <img class="card-img-top" src="assets/php.png" alt="Html Image" style="width:100%">
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/node.png" alt="Node.js logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">NODE.JS</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/react.png" alt="React.js logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">REACT.JS</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/php.png" alt="PHP logo" style="width:100%">
                   <div class="card-body">
                     <p class="card-text">PHP</p>
                   </div>
                 </div>
 
-                <div class="card col-sm-4" style="width:150px">
-                  <img class="card-img-top" src="assets/Laravel.png" alt="Html Image" style="width:100%">
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/Laravel.png" alt="LARAVEL logo" style="width:100%">
                   <div class="card-body">
                     <p class="card-text">LARAVEL</p>
                   </div>
                 </div>
 
-                <div class="card col-sm-4" style="width:150px">
-                  <img class="card-img-top" src="assets/node.png" alt="Html Image" style="width:100%">
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/git.png" alt="Git logo" style="width:100%">
                   <div class="card-body">
-                    <p class="card-text">NODE.JS</p>
+                    <p class="card-text">GIT</p>
+                  </div>
+                </div>
+
+                <div class="card col-md-4" style="width:150px">
+                  <img class="card-img-top" src="assets/python.png" alt="Python logo" style="width:100%">
+                  <div class="card-body">
+                    <p class="card-text">PYTHON</p>
                   </div>
                 </div>
 
@@ -198,23 +239,23 @@
 
          </div>
 
-         <div class="col-sm-5 Experinece d-flex justify-content-center" style="flex-direction:column;">
+         <div class="col-md-5 Experinece d-flex justify-content-center" style="flex-direction:column;">
             <h3>More Info <i class="fa fa-info-circle" aria-hidden="true"></i></h3>
-           <a href="ElameNdivaJordanResume.pdf" class="btn btn-outline-primary p-4 w-50 " style="margin: 0 auto;">View CV</a>
+           <a href="ElameNdivaJordanResume.pdf" class="btn btn-outline-primary p-4 " style="margin: 0 auto; width: 50%;">View CV</a>
          </div>
       </div>
       
    </section>
 
-   <div id="Services-section" style="height: 13vh;"></div>
+   <div id="Services-section-pc" style="height: 13vh;"></div>
 
-   <section class="container-fluid text-center Services-section">
+   <section class="container-fluid text-center Services-section" id="Services-section">
 
-      <h1><span>S</span>e<span>r</span>v<span>i</span>c<span>e</span>s <a href="#Home-section"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
+      <h1><span>S</span>e<span>r</span>v<span>i</span>c<span>e</span>s <a href="#header2"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
 
-      <div class="row d-flex" style="justify-content: space-evenly;">
+      <div class="row Services-row" style="justify-content: space-evenly;">
 
-         <div class="col-sm-3 image1">
+         <div class="col-md-3 image1">
  
             <div class="transition">
                <p>Front end Web Developement</p>
@@ -223,7 +264,7 @@
             
          </div>
 
-         <div class="col-sm-3 image2">
+         <div class="col-md-3 image2">
   
                 <div class="transition">
                    <p>Backend Web Developement</p>
@@ -232,7 +273,7 @@
                 
              </div>
 
-             <div class="col-sm-3 image3">
+             <div class="col-md-3 image3">
                    <div class="transition">
                       <p>Website Specification Documenting</p>
                       <p><i class="fa fa-folder fa-2x" aria-hidden="true"></i></p>
@@ -245,18 +286,87 @@
       </div>
 
    </section>
-<footer class="container-fluid p-o" style=" padding-top:30px;   margin-top: 20px;">
-   <div class="row d-flex" style="justify-content: space-evenly;">
-       <div class="col-sm-3 ">
+
+   
+   <div id="Projects-section-pc" style="height: 13vh;"></div>
+
+   <section class="container-fluid p-0 text-center Projects-section" id="Projects-section">
+
+      <h1><span>P</span>r<span>o</span>j<span>e</span>c<span>t</span>s <a href="#header2"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></h1>
+
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+     <div class="shade" style="padding: 100%;">
+   
+    </div>
+    <div class="carousel-item active">
+      <img src="assets/Movie.png" alt="MovieLand" style="width:100%;">
+      <div class="carousel-caption">
+        <h3>MovieLand</h3>
+        <p>Web Application for movie searching</p>
+      </div>
+    </div>
+
+    <div class="carousel-item ci-2">
+      <img src="assets/E-2.png"  alt="Jordinosoft" style="width:100%">
+      <div class="carousel-caption" >
+        <h3>JORDINOSOFT</h3>
+        <p>Website for showcasing JORDINOSOFT enterprise</p>
+      </div> 
+    </div>
+
+    <div class="carousel-item ">
+      <img src="assets/Tech.png" alt="Project3" style="width:100%">
+      <div class="carousel-caption">
+        <h3>Mentorship Platform</h3>
+        <p>Site to motivate, encourage and teach aspiring individuals in different tech fields</p>
+      </div>  
+    </div>
+
+    <div class="carousel-item ">
+      <img src="assets/Bank.png" alt="HooBank" style="width:100%">
+      <div class="carousel-caption">
+        <h3>HooBank</h3>
+        <p>Project I used to improve my React and Tailwind css skills</p>
+      </div>  
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+   </section>
+   
+<footer class="container-fluid">
+   <div class="row footer-row d-flex" style="justify-content: space-evenly; padding-top: 30px;">
+       <div class="col-md-3 ">
          <h3>Accounts</h3>
          <ul>
-            <li>Github <i class="fa-brands fa-github" aria-hidden="true"></i>:<a href="#"  style="color: black;"></a></li>
-            <li>Linkedin <i class="fa-brands fa-linkedin" aria-hidden="true"></i>: <a href="#" style="color: black;"></a></li>
-            <li>Stackoverflow <i class="fa-brands fa-stack-overflow" aria-hidden="true"></i>:<a href="#"></a></a></li>
+            <li><a href="#" style="color: black;">Github <i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: black;">Linkedin <i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: black;">Stackoverflow <i class="fa-brands fa-stack-overflow" aria-hidden="true"></i></a></li>
          </ul>
        </div>
 
-       <div class="col-sm-3">
+       <div class="col-md-3">
          <h3>Contact</h3>
          <ul>
             <li>Email <i class="fa fa-envelope" aria-hidden="true"></i>: ndivajordan@gmail.com</li>
@@ -265,34 +375,153 @@
          </ul>
        </div>
 
-       <div class="col-sm-3">
+       <div class="col-md-3">
          <h3>Social Media</h3>
          <ul>
-            <li>Facebook <i class="fa-brands fa-facebook" aria-hidden="true"></i></li>
-            <li>Whatsapp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></li>
-            <li>Twitter <i class="fa-brands fa-twitter" aria-hidden="true"></i></li>
+            <li><a href="#" style="color: black;">Facebook <i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: black;">Whatsapp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="color: black;">Twitter <i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
          </ul>
        </div>
+       <div class=" row bg-dark">
+        <p class="text-center text-white" style="margin: 5px 0;">Developed By Elame Jordan</p>
+      </div>
    </div>
-   <div class=" row bg-dark">
-     <p class="text-center text-white" style="margin: 5px 0;">Developed By Elame Jordan</p>
-   </div>
-</footer>   
+</footer>
+   
 <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script> 
-<script src="all.min.js"></script> 
+<script src="all.min.js"></script>
+
 <script>
   window.onscroll = function() {myFunction()};
   
   var header = document.getElementById("header");
+  var header2 = document.getElementById("header2");
   var sticky = header.offsetTop;
-  
+  const ids_pc = ['nav1', 'nav2', 'nav3', 'nav4', 'nav5'];
+  const open1 = document.getElementById('open');
+  const close1 = document.getElementById('close');
+  const phoneUl1 = document.getElementById('phone-ul');
+  for (let i = 0; i < ids_pc.length; i++) {
+        const currentId_pc = ids_pc[i];
+
+        const navigation_pc = document.getElementById(currentId_pc);
+
+        navigation_pc.addEventListener('mouseover', function(){
+       
+        navigation_pc.style.color = "rgb(205, 205, 226)"
+
+      });
+
+       navigation_pc.addEventListener('mouseout', function(){
+       
+       navigation_pc.style.color = "black"
+
+     });
+
+     
+    
+  }
+
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
+      header.classList.add("sticky","bg-secondary", "text-white");
+      header2.classList.add("sticky", "bg-secondary", "text-white");
+        close1.style.display = "none"
+        open1.style.display = "block"
+        phoneUl1.style.display = "none"
+      for (let i = 0; i < ids_pc.length; i++) {
+      const currentId_pc = ids_pc[i];
+
+      const navigation_pc = document.getElementById(currentId_pc);
+      navigation_pc.style.color = "white";
+
+       navigation_pc.addEventListener('mouseout', function(){
+       
+       navigation_pc.style.color = "white"
+
+     });
     }
+      
+      
+    } else {
+      header.classList.remove("sticky","bg-secondary", "text-white");
+      header2.classList.remove("sticky", "bg-secondary", "text-white");
+      for (let i = 0; i < ids_pc.length; i++) {
+      const currentId_pc = ids_pc[i];
+
+       const navigation_pc = document.getElementById(currentId_pc);
+
+       navigation_pc.style.color = "black"
+      
+       navigation_pc.addEventListener('mouseout', function(){
+       
+       navigation_pc.style.color = "black"
+
+     });
+    }
+    }
+
+   
   }
   </script>  
+
+  <script>
+    const body_btn = document.getElementById("body_btn")
+    const ids = ['navigation1', 'navigation2', 'navigation3', 'navigation4', 'navigation5', 'navigation6'];
+    const open = document.getElementById('open');
+    const close = document.getElementById('close');
+    const phoneUl = document.getElementById('phone-ul');
+
+  
+        
+  //       body_btn.addEventListener('click', function() {
+  //       if(this.click){
+  //         close.style.display = "none"
+  //         open.style.display = "block"
+  //         phoneUl.style.display = "none"
+  //       }
+  
+  // });
+        
+
+    open.addEventListener('click', function() {
+
+      if(this.click){
+       open.style.display = "none"
+       close.style.display = "block"
+       phoneUl.style.display = "block"
+      }
+     
+    });
+
+    close.addEventListener('click', function() {
+      if(this.click){
+        close.style.display = "none"
+        open.style.display = "block"
+        phoneUl.style.display = "none"
+      }
+
+});
+
+for (let i = 0; i < ids.length; i++) {
+const currentId = ids[i];
+
+const navigation = document.getElementById(currentId);
+
+navigation.addEventListener('click', function(){
+
+  if(this.click){
+        close.style.display = "none"
+        open.style.display = "block"
+        phoneUl.style.display = "none"
+      }
+
+
+});
+}
+
+
+  </script>
 </body>
 </html>

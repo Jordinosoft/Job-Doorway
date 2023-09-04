@@ -35,42 +35,71 @@ body{
     
 }
 
-.Home-section, footer{
+.Home-section{
     background-color: var(--home-color);
+    padding: 70px 0; 
 }
 
 .Menu-ul{
     list-style: none;
 }
 
-.Home-section, .About-section, .Skills-section, .Services-section{
-    height: fit-content;  
-}
-
-.About-section, .Skills-section, .Services-section{
-    margin: 60px 0;
-    
-}
-
-
-.About-section h2, .About-section h1, .Skills-section h1, .Skills-section h3, .Services-section h1{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
 .Menu-ul a{
     text-decoration: none;
     margin: 0 10px;
-    color: white;
+    color: black;
+    padding-bottom: 5px;
 }
 
 .Menu-ul a:hover{
-    color: rgb(205, 205, 226);
+    color: rgb(205, 205, 226); 
     border-bottom: 1px solid;
     letter-spacing: 2px;
     transition: 2s ease;
 
 }
+
+.active{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.phone-menu{
+    display: none;
+}
+
+
+.phone-ul{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid;
+    display: none;  
+    width: 30vw;
+}
+
+.phone-ul a{
+    color: black;
+}
+
+.Home-section, .About-section, .Skills-section, .Services-section, .Projects-section{
+    height: fit-content;  
+}
+
+.About-section, .Skills-section, .Services-section, .Projects-section{
+    margin: 60px 0;   
+}
+
+
+.About-section h2, .About-section h1, .Skills-section h1, .Skills-section h3, .Services-section h1, .Projects-section h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 .my-info{
     height: 100%;
     padding: 10px 10px; 
@@ -82,6 +111,11 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
+   
+}
+
+.my-info-text p{
+    ont-size: xx-large;
 }
 
 .my-img {
@@ -150,6 +184,10 @@ body{
     transition: 2s ease;
 }
 
+footer{
+    background-color: var(--main-color);
+}
+
 footer ul{
     list-style: none;
     padding-left: 0;   
@@ -164,9 +202,6 @@ footer ul a{
     color: black;
 }
 
-.phone-menu{
-    display: none;
-}
 
 
 .Languages-row{
@@ -177,6 +212,21 @@ footer ul a{
     border: none;
 }
 
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+
+.shade{
+    position: absolute;
+    background-color: #00000056;
+    height: 100%;
+    z-index: 1;
+}
+
+.fa-arrow-up{
+    display: none;
+}
 
 /*My PC's full screen width*/
   @media (max-width: 1366px){  
@@ -184,17 +234,86 @@ footer ul a{
  
    }
 
-@media (max-width: 800px){
-    .my-info-text{
-        width: 80vw;
-        text-align: center;
-        margin: auto;
-       }
+@media (min-width: 1000px){
+    .Services-row .image1, .Services-row .image2, .Services-row .image3{
+       width: 30%;     
+   }
+  
+  
+ }
 
-    .skill-row, .About-row {
-        display: flex;
+ @media (max-width: 1136px){
+   .Skills-section .skill-row{
+    flex-direction: column;
+   }
+
+   .Languages, .Experinece{
+    width: 100%;
+   }
+   
+   .Languages-row{
+    margin: auto;
+   }
+
+   .Experinece{
+    margin-top: 200px;
+   }
+
+ }
+
+ @media (max-width: 1050px){
+    .About-row{
         flex-direction: column;
     }
+
+    .Education, .Achievements, .Passions{
+        width: 100%;
+    }
+
+    .Achievements, .Passions{
+        margin-top: 50px;
+    }
+
+   .Achievements{
+    height: 50vh;
+   }
+
+ }
+
+ @media (max-width: 1000px){
+   .Services-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Services-row .image1, .Services-row .image2{
+    margin-bottom: 50px;
+     width: 80%; 
+}
+
+.Services-row .image3{
+    width: 80%; 
+}
+
+.Services-row .transition{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+
+}
+@media (max-width: 800px){
+
+    .my-info-text{
+        margin: auto; 
+       }
+
+     /* .About-row {
+        display: flex;
+        flex-direction: column;
+    } */
 
     .Languages, .About-row div{
         width: 100%;
@@ -202,11 +321,7 @@ footer ul a{
  
      .Experinece{
      width: 100%;
-     margin-top: 30px;
-     }
-
-     .Services-section .image1, .Services-section .image2{
-          margin-bottom: 40px;
+     margin-top: 60px;
      }
 
      .pc-menu{
@@ -217,16 +332,48 @@ footer ul a{
         display: flex;
      }
 
-     .About-section, .Skills-section, .Services-section, .Achievements div{
-        margin: 20px 0;
+     .fa-arrow-up{
+        display: inline-flex;
      }
-}
 
-@media (max-width: 600px){
-    footer, .About-section{
+     .About-section, .Skills-section, .Services-section, .Projects-section, .Achievements div{
+        margin: 10px 0;
+     }
+
+     .carousel-item img{
+        height: 40vh;
+     }
+
+     .phone-ul a:hover{
+        color: white;
+        background-color: black;
+        
+     }
+     footer{
+        padding: 0;
+     }
+
+     .footer-row{
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
         text-align: center;
     }
+
+    footer .col-md-3{
+        width: fit-content;
+    }
 }
+
+@media (max-width: 576px){
+     .my-info-text{
+        text-align: center;
+    }   
+}
+
+
 
 
 
